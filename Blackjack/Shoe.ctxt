@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Shoe
+comment0.text=\r\n\ Shoe\ models\ the\ behavior\ of\ a\ casino-style\ shoe\ that\ holds\ and\r\n\ allows\ access\ to\ multiple\ Decks\ of\ Cards\ which\ have\ been\ \r\n\ combined\ into\ a\ single\ larger\ set\ of\ Cards.\r\n\ \r\n\ @author\ David\ Gumminger\ \r\n\ @version\ March\ 2018\r\n
+comment1.params=n
+comment1.target=Shoe(int)
+comment1.text=\r\n\ Creates\ a\ Shoe\ composed\ of\ the\ specified\ number\ of\ Decks.\r\n\ Though\ not\ explicitly\ checked,\ a\ typical\ Shoe\ would\ hold\r\n\ between\ four\ and\ seven\ complete\ Decks.\ \r\n\ @param\ -\ int\ n,\ the\ number\ of\ Decks\ to\ be\ placed\ in\ the\ Shoe\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+comment2.params=
+comment2.target=void\ shuffleShoe()
+comment2.text=\r\n\ Shuffles\ the\ Shoe.\ Begins\ by\ placing\ any\ Cards\ from\ the\r\n\ discard\ pile\ and\ adding\ them\ back\ to\ the\ main\ Shoe.\ All\r\n\ Aces\ additionally\ have\ their\ values\ reset\ to\ eleven.\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\r\n
+comment3.params=
+comment3.target=Card\ dealCard()
+comment3.text=\r\n\ Returns\ the\ Card\ from\ the\ top\ of\ the\ Shoe.\ This\ Card\ is\ also\r\n\ added\ to\ the\ discard\ pile.\ While\ this\ doesn't\ exactly\ mimic\r\n\ real-world\ behavior,\ it\ makes\ clean-up\ after\ each\ Hand\ more\r\n\ efficient.\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+comment4.params=
+comment4.target=void\ printShoe()
+comment4.text=\r\n\ Prints\ out\ the\ cards\ the\ Shoe,\ one\ per\ line.\ Used\ mainly\r\n\ for\ testing\ purposes\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+comment5.params=
+comment5.target=int\ getNumCardsInShoe()
+comment5.text=\r\n\ Returns\ the\ number\ of\ Cards\ remaining\ in\ the\ Shoe.\ Used\r\n\ primarily\ to\ check\ for\ when\ the\ Shoe\ needs\ to\ be\ reshuffled\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+numComments=6

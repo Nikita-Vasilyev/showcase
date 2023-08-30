@@ -1,0 +1,81 @@
+Shuffling...
+Your total chips: 1000
+How much would you like to bet?
+500
+The dealers first card is: Nine of Spades
+
+This is your hand: [Ace of Diamonds, Four of Diamonds]
+The value of your cards is: 15
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+h
+
+This is your hand: [Ace of Diamonds, Four of Diamonds, Six of Spades]
+The value of your cards is: 21
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+s
+You won!
+
+The dealer's cards: [Nine of Spades, Jack of Hearts]
+Your total chips: 1500
+Would you like to start next round?(y/n)
+y
+Your total chips: 1500
+How much would you like to bet?
+500
+The dealers first card is: Jack of Diamonds
+
+This is your hand: [Two of Hearts, Eight of Diamonds]
+The value of your cards is: 10
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+h
+
+This is your hand: [Two of Hearts, Eight of Diamonds, Two of Hearts]
+The value of your cards is: 12
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+d
+Your total chips: 500
+Your chips bet: 1000
+
+This is your hand: [Two of Hearts, Eight of Diamonds, Two of Hearts, Five of Clubs]
+The value of your cards is: 17
+Tie game!
+
+The dealer's cards: [Jack of Diamonds, Seven of Clubs]
+Your total chips: 1500
+Would you like to start next round?(y/n)
+y
+Your total chips: 1500
+How much would you like to bet?
+500
+The dealers first card is: Seven of Hearts
+
+This is your hand: [Six of Clubs, Three of Diamonds]
+The value of your cards is: 9
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+h
+
+This is your hand: [Six of Clubs, Three of Diamonds, Ace of Spades]
+The value of your cards is: 20
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+s
+You won!
+
+The dealer's cards: [Seven of Hearts, Queen of Hearts]
+Your total chips: 2000
+Would you like to start next round?(y/n)
+y
+Your total chips: 2000
+How much would you like to bet?
+1000
+The dealers first card is: Six of Diamonds
+
+This is your hand: [Ten of Clubs, Seven of Hearts]
+The value of your cards is: 17
+What would you like to do? Stand(s), Hit(h) or Double Down(d)
+s
+You won!
+
+The dealer's cards: [Six of Diamonds, Eight of Spades, Ace of Clubs]
+Your total chips: 3000
+Would you like to start next round?(y/n)
+n

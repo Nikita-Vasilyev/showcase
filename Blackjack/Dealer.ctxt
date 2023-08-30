@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Dealer
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Dealer\ here.\r\n\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ 1\ Feb\ 2019\r\n\ Dealer\ begins\ by\ revealing\ their\ hole-card.\ From\ this\ point\ on,\ \r\n\ all\ cards\ should\ be\ visible\ to\ the\ player(s)\ \r\nDealer\ must\ take\ a\ hit\ if\ their\ hand\ total\ is\ 16\ or\ less.\r\nDealer\ always\ stands\ if\ their\ hand\ total\ is\ 17\ or\ greater\ \r\nThe\ round\ ends\ once\ the\ dealer\ stands,\ or\ as\ soon\ as\ the\ dealer's\ hand\ goes\ \r\nover\ 21\ points\ (i.e.\ the\ dealer\ "busts")\r\n\r\n
+comment1.params=
+comment1.target=Dealer()
+comment1.text=\r\n\ Constructor\ for\ Dealer\ class\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+comment2.params=p1
+comment2.target=void\ start(Hand)
+comment2.text=\r\n\ The\ start()\ method\ starts\ the\ game\ by\ dealing\ the\ cards\ \r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+comment3.params=p1
+comment3.target=void\ hitPlayer(Hand)
+comment3.text=\r\n\ The\ hitPlayer()\ method\ adds\ a\ card\ to\ the\ player\ when\ they\ take\ a\ hit\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+comment4.params=
+comment4.target=void\ makeMove()
+comment4.text=\r\n\ the\ makeMove()\ method\ allows\ the\ dealer\ to\ either\ hit\ or\ stand\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+comment5.params=
+comment5.target=void\ reshuffle()
+comment5.text=\r\n\ calling\ back\ the\ shuffle\ method\ from\ the\ deck\ class\ when\ cards\ go\ less\ \r\n\ than\ 75\ in\ the\ shoe\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+comment6.params=
+comment6.target=Card\ showFace()
+comment6.text=\r\n\ Shows\ the\ face\ card\ of\ the\ dealer\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+comment7.params=
+comment7.target=Hand\ getHand()
+comment7.text=\r\n\ Shows\ the\ face\ card\ of\ the\ dealer\r\n\ @author\ Aashish\ Chaubal\r\n\ @version\ Feb\ 2019\r\n
+numComments=8

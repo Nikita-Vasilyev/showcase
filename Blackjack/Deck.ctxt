@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Deck
+comment0.text=\r\n\ Deck\ generates\ a\ ArrayList\ which\ represents\ a\ standard\ Deck\r\n\ of\ 52\ playing\ cards\ (no\ jokers)\ and\ provides\ methods\ to\ \r\n\ access\ and\ shuffle\ the\ constructed\ Deck.\r\n\ \r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\r\n
+comment1.params=
+comment1.target=Deck()
+comment1.text=\r\n\ Creates\ the\ Deck\ by\ passing\ consequtive\ numbers\ between\ \r\n\ 0\ and\ 51\ to\ the\ Card\ class\ constructor.\ This\ ensures\ exactly\r\n\ one\ of\ each\ card\ is\ created\ and\ added\ to\ the\ Deck.\ See\ details\r\n\ of\ the\ Card\ class\ constructor\ for\ more\ information\ on\ how\r\n\ Card\ creation\ is\ designed.\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getDeck()
+comment2.text=\r\n\ Returns\ a\ pointer\ to\ the\ ArrayList\ that\ contains\ the\ Cards\r\n\ that\ make\ up\ this\ deck.\r\n\ @return\ ArrayList<Card>\ -\ pointer\ to\ the\ Cards\ in\ the\ Deck\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+comment3.params=
+comment3.target=void\ printDeck()
+comment3.text=\r\n\ Prints\ out\ the\ cards\ the\ Deck,\ one\ per\ line.\ Used\ mainly\r\n\ for\ testing\ purposes\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+comment4.params=
+comment4.target=void\ shuffleDeck()
+comment4.text=\r\n\ Shuffles\ the\ cards\ in\ the\ Deck\r\n\ @author\ David\ Gumminger\r\n\ @version\ March\ 2018\ \ \r\n
+numComments=5

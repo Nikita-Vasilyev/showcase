@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Olives
+comment1.params=n
+comment1.target=Olives(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Jalapeno\r\n
+comment2.params=n\ c\ a
+comment2.target=Olives(java.lang.String,\ java.lang.String,\ int)
+comment3.params=g\ x\ y
+comment3.target=void\ placeTopping(java.awt.Graphics,\ int,\ int)
+numComments=4

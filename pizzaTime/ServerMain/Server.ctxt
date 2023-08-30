@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Server
+comment1.params=port\ num
+comment1.target=Server(int,\ int)
+comment1.text=\r\n\ Tries\ to\ connect\ with\ a\ client\ and\ recieve\ informations\ about\ \r\n\ pizza\ ordered.\ Prints\ the\ recieved\ informations\ and\ sends\ \r\n\ the\ pizza\ image\ back\ to\ the\ client.\r\n
+numComments=2

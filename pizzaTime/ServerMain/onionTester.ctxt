@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=onionTester
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ onionTester\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ code\ of\ OnionTester.\ creates\ the\ basic\ frame\ to\ \r\n\ draw\ onion\ inside.\ \r\n
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment2.text=\r\n\ creates\ the\ onion\ object\ and\ paint\ it\ in\ the\ frame.\r\n
+numComments=3

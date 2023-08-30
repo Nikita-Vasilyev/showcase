@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Bacon
+comment1.params=n
+comment1.target=Bacon(java.lang.String)
+comment2.params=n\ c\ a
+comment2.target=Bacon(java.lang.String,\ java.lang.String,\ int)
+comment3.params=g\ x\ y
+comment3.target=void\ placeTopping(java.awt.Graphics,\ int,\ int)
+numComments=4

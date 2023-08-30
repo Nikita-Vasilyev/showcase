@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Pizza
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pizza\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=s
+comment1.target=Pizza(java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ Pizza,\ parameter\ is\ size\ of\ the\ Pizza.\r\n
+comment2.params=
+comment2.target=void\ slicePizza()
+comment2.text=\r\n\ Determines\ the\ number\ of\ slices\ based\ on\ the\ size\ of\ the\ Pizza.\r\n
+comment3.params=s
+comment3.target=void\ addInfo(Topping)
+comment3.text=\r\n\ Adds\ the\ Topping\ to\ the\ ArrayList\ of\ Toppings.\r\n\ @parameter\:\ new\ Topping\ that\ will\ be\ on\ the\ Pizza.\r\n
+comment4.params=
+comment4.target=void\ determinePrice()
+comment4.text=\r\n\ Determines\ the\ price\ of\ Pizza\ based\ on\ Toppings\ and\ the\ size\ of\ the\ Pizza.\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Prints\ out\ all\ the\ information\ about\ the\ Pizza.\r\n
+comment6.params=
+comment6.target=java.util.ArrayList\ getTopping()
+comment6.text=\r\n\ Returns\ the\ ArraList\ of\ Toppings.\r\n
+numComments=7

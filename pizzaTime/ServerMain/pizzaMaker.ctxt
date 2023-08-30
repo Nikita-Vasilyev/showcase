@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=pizzaMaker
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ pizzaMaker\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=pizzaMaker()
+comment1.text=\r\n\ Constructor\ for\ pizzaMaker.\ Selects\ the\ clicked\ topping\ and\ \r\n\ show\ it\ at\ upper\ left\ hand\ corner.\ Then,\ brings\ the\ topping\ to\ \r\n\ where\ user\ clicked.\r\n
+comment2.params=e
+comment2.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Main\ code\ of\ this\ class.\ Downloads\ the\ image\ of\ table,\ base\ pizza,\ \r\n\ and\ red\ button.\ Makes\ pizzaMaker\ object\ to\ start\ the\ program.\r\n\ Then,\ set\ up\ a\ new\ server\ to\ send\ the\ image\ back.\r\n
+comment4.params=g
+comment4.target=void\ paintComponent(java.awt.Graphics)
+comment4.text=\r\n\ Paints\ the\ background\ (table,\ base\ pizza,\ and\ red\ button\r\n\ to\ kill\ the\ program)\ and\ every\ toppings.\r\n
+comment5.params=
+comment5.target=java.util.ArrayList\ getTops()
+comment5.text=\r\n\ returns\ arrayList\ of\ toppings\ \r\n
+numComments=6

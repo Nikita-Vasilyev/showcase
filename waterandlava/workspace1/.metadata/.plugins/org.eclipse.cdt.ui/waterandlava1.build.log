@@ -1,0 +1,140 @@
+13:06:25 **** Build of configuration Debug for project waterandlava1 ****
+make all 
+'Building file: ../src/lw_usb/HID.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/HID.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/HID.d" -MT"src/lw_usb/HID.o" -o "src/lw_usb/HID.o" "../src/lw_usb/HID.c"
+../src/lw_usb/HID.c:9:1: warning: braces around scalar initializer
+    9 | HID_DEVICE hid_device = { { 0 } };
+      | ^~~~~~~~~~
+../src/lw_usb/HID.c:9:1: note: (near initialization for 'hid_device.addr')
+'Finished building: ../src/lw_usb/HID.c'
+' '
+'Building file: ../src/lw_usb/MAX3421E.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/MAX3421E.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/MAX3421E.d" -MT"src/lw_usb/MAX3421E.o" -o "src/lw_usb/MAX3421E.o" "../src/lw_usb/MAX3421E.c"
+In file included from D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xspi.h:303,
+                 from ../src/lw_usb/MAX3421E.c:14:
+../src/lw_usb/MAX3421E.c: In function 'SPI_init':
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xstatus.h:44:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   44 | #define XST_DEVICE_NOT_FOUND            2L
+      |                                         ^~
+../src/lw_usb/MAX3421E.c:44:24: note: in expansion of macro 'XST_DEVICE_NOT_FOUND'
+   44 |                 return XST_DEVICE_NOT_FOUND;
+      |                        ^~~~~~~~~~~~~~~~~~~~
+../src/lw_usb/MAX3421E.c:38:6: note: declared here
+   38 | void SPI_init() {
+      |      ^~~~~~~~
+In file included from D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xspi.h:303,
+                 from ../src/lw_usb/MAX3421E.c:14:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/lw_usb/MAX3421E.c:50:24: note: in expansion of macro 'XST_FAILURE'
+   50 |                 return XST_FAILURE;
+      |                        ^~~~~~~~~~~
+../src/lw_usb/MAX3421E.c:38:6: note: declared here
+   38 | void SPI_init() {
+      |      ^~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXreg_wr':
+../src/lw_usb/MAX3421E.c:77:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+   77 |         u8 ReadBuffer[2];
+      |            ^~~~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXbytes_wr':
+../src/lw_usb/MAX3421E.c:100:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+  100 |         u8 ReadBuffer[nbytes+1];
+      |            ^~~~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAX3421E_Task':
+../src/lw_usb/MAX3421E.c:301:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  301 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
+      |                                              ^
+../src/lw_usb/MAX3421E.c: In function 'MaxGpxHandler':
+../src/lw_usb/MAX3421E.c:337:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
+  337 |         BYTE GPINIRQ;
+      |              ^~~~~~~
+'Finished building: ../src/lw_usb/MAX3421E.c'
+' '
+'Building file: ../src/lw_usb/transfer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/transfer.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/transfer.d" -MT"src/lw_usb/transfer.o" -o "src/lw_usb/transfer.o" "../src/lw_usb/transfer.c"
+../src/lw_usb/transfer.c:13:1: warning: braces around scalar initializer
+   13 | EP_RECORD dev0ep = {{ 0 }};         //Endpoint data structure for uninitialized device during enumeration
+      | ^~~~~~~~~
+../src/lw_usb/transfer.c:13:1: note: (near initialization for 'dev0ep.epAddr')
+../src/lw_usb/transfer.c: In function 'XferInTransfer':
+../src/lw_usb/transfer.c:199:7: warning: unused variable 'tmpbyte' [-Wunused-variable]
+  199 |  BYTE tmpbyte;
+      |       ^~~~~~~
+../src/lw_usb/transfer.c:198:7: warning: unused variable 'i' [-Wunused-variable]
+  198 |  BYTE i;
+      |       ^
+'Finished building: ../src/lw_usb/transfer.c'
+' '
+'Building file: ../src/hdmi_bg_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_bg_controller.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_bg_controller.d" -MT"src/hdmi_bg_controller.o" -o "src/hdmi_bg_controller.o" "../src/hdmi_bg_controller.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/hdmi_bg_controller.c:1:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:627:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c:408:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  408 | make_star(int scene, int x, int y){
+      | ^~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level2':
+../src/hdmi_bg_controller.c:525:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  525 | void generate_level2(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level3':
+../src/hdmi_bg_controller.c:588:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  588 | void generate_level3(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'make_star':
+../src/hdmi_bg_controller.c:410:1: warning: control reaches end of non-void function [-Wreturn-type]
+  410 | }
+      | ^
+'Finished building: ../src/hdmi_bg_controller.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/main.c:50:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:627:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:168:41: warning: initialization of 'volatile uint32_t *' {aka 'volatile long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  168 |         volatile uint32_t* sound_play = 0x40010000;
+      |                                         ^~~~~~~~~~
+In file included from ../src/main.c:50:
+At top level:
+../src/hdmi_bg_controller.h:46:40: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                        ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: waterandlava1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "waterandlava1.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_bg_controller.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: waterandlava1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size waterandlava1.elf  |tee "waterandlava1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38444	    500	   3904	  42848	   a760	waterandlava1.elf
+'Finished building: waterandlava1.elf.size'
+' '
+
+13:06:27 Build Finished (took 1s.864ms)
+

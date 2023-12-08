@@ -1,0 +1,321 @@
+!SESSION 2023-12-08 12:57:55.523 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file D:\ECE385\waterandlava\workspace1\.metadata\.bak_0.log
+Created Time: 2023-12-08 13:08:29.952
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:29.952
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:29.968
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:29.977
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:30.016
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:30.017
+!MESSAGE XSCT Command: [fpga -file D:/ECE385/waterandlava/workspace1/waterandlava1/_ide/bitstream/mb_waterandlava_toplevel.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.285
+!MESSAGE XSCT command with result: [fpga -file D:/ECE385/waterandlava/workspace1/waterandlava1/_ide/bitstream/mb_waterandlava_toplevel.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.309
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.386
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.387
+!MESSAGE XSCT Command: [loadhw -hw D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/hw/mb_waterandlava_toplevel.xsa -regs], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.461
+!MESSAGE XSCT command with result: [loadhw -hw D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/hw/mb_waterandlava_toplevel.xsa -regs], Result: [null, mb_waterandlava_toplevel_2]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.462
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.464
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.464
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.481
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.482
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.487
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:31.488
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.502
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.503
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.609
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.609
+!MESSAGE XSCT Command: [dow D:/ECE385/waterandlava/workspace1/waterandlava1/Debug/waterandlava1.elf], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.792
+!MESSAGE XSCT command with result: [dow D:/ECE385/waterandlava/workspace1/waterandlava1/Debug/waterandlava1.elf], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.820
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.835
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.836
+!MESSAGE XSCT Command: [con], Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.852
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-0: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.860
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-146
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:08:34.863
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-146
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:04.124
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-08 13:26:06.352
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-08 13:26:06.376
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-08 13:26:06.376
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-12-08 13:26:06.377
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.411
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.412
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.622
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.622
+!MESSAGE XSCT Command: [version -server], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.624
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.624
+!MESSAGE XSCT Command: [version], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.625
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.625
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.643
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.644
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.663
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.663
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.670
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.670
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.686
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.687
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.693
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.694
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.711
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.712
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.720
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.720
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.738
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.739
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.745
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.746
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.769
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.769
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "RealDigital Boo 88742923022CA" && level == 0}], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.795
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "RealDigital Boo 88742923022CA" && level == 0}], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.795
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.816
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.841
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.850
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* RealDigital Boo 88742923022CA]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.851
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.876
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==1}], Result: [null,      2  xc7s50 (idcode 0362f093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.878
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.916
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88742923022CA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:06.917
+!MESSAGE XSCT Command: [fpga -file D:/ECE385/waterandlava/workspace1/waterandlava1/_ide/bitstream/mb_waterandlava_toplevel.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.188
+!MESSAGE XSCT command with result: [fpga -file D:/ECE385/waterandlava/workspace1/waterandlava1/_ide/bitstream/mb_waterandlava_toplevel.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.217
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.296
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.297
+!MESSAGE XSCT Command: [loadhw -hw D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/hw/mb_waterandlava_toplevel.xsa -regs], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.307
+!MESSAGE XSCT command with result: [loadhw -hw D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/hw/mb_waterandlava_toplevel.xsa -regs], Result: [null, mb_waterandlava_toplevel_2]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.307
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.309
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.310
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.328
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.328
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.331
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:08.332
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.340
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.340
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.417
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.417
+!MESSAGE XSCT Command: [dow D:/ECE385/waterandlava/workspace1/waterandlava1/Debug/waterandlava1.elf], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.599
+!MESSAGE XSCT command with result: [dow D:/ECE385/waterandlava/workspace1/waterandlava1/Debug/waterandlava1.elf], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.613
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.636
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.636
+!MESSAGE XSCT Command: [con], Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.655
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-13: Launching Debugger_waterandlava1-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.669
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-179
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-12-08 13:26:11.673
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-179

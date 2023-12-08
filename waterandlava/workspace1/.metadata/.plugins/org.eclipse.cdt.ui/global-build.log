@@ -1,0 +1,676 @@
+Nothing to build in platform 'mb_waterandlava_toplevel'
+
+22:40:06 **** Incremental Build of configuration Debug for project waterandlava1 ****
+make all 
+'Building file: ../src/hdmi_bg_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_bg_controller.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_bg_controller.d" -MT"src/hdmi_bg_controller.o" -o "src/hdmi_bg_controller.o" "../src/hdmi_bg_controller.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/hdmi_bg_controller.c:1:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:612:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  612 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c:408:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  408 | make_star(int scene, int x, int y){
+      | ^~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level2':
+../src/hdmi_bg_controller.c:525:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  525 | void generate_level2(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level3':
+../src/hdmi_bg_controller.c:588:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  588 | void generate_level3(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'make_star':
+../src/hdmi_bg_controller.c:410:1: warning: control reaches end of non-void function [-Wreturn-type]
+  410 | }
+      | ^
+'Finished building: ../src/hdmi_bg_controller.c'
+' '
+'Building target: waterandlava1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "waterandlava1.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_bg_controller.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: waterandlava1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size waterandlava1.elf  |tee "waterandlava1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38336	    484	   3900	  42720	   a6e0	waterandlava1.elf
+'Finished building: waterandlava1.elf.size'
+' '
+13:05:49 **** Clean-only build of project mb_waterandlava_toplevel ****
+buildplatform.bat 55501 mb_waterandlava_toplevel clean 
+XSDB Server Channel: tcfchan#1
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/gpio_v4_9/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/spi_v4_9/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/tmrctr_v4_9/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+13:05:54 **** Clean-only build of configuration Debug for project waterandlava1 ****
+make clean 
+rm -rf  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_bg_controller.o ./src/main.o ./src/platform.o  ./src/lw_usb/HID.d ./src/lw_usb/MAX3421E.d ./src/lw_usb/transfer.d  ./src/hdmi_bg_controller.d ./src/main.d ./src/platform.d  waterandlava1.elf.size  waterandlava1.elf
+' '
+13:05:54 **** Clean-only build of configuration Debug for project waterandlava1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+13:05:55 **** Build of project mb_waterandlava_toplevel ****
+buildplatform.bat 55501 mb_waterandlava_toplevel  
+XSDB Server Channel: tcfchan#2
+D:/Vitis/2022.2/gnu/microblaze/nt
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/spi_v4_9/src"
+
+make -C microblaze_0/libsrc/spi_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COM
+PILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_
+COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/spi_v4_9/src"
+
+make -C microblaze_0/libsrc/spi_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPIL
+ER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COM
+PILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+e_0/lib/xspi.o microblaze_0/lib/xspi_g.o microblaze_0/lib/xspi_options.o microblaze_0/lib/xspi_selftest.o microblaze_0/lib/xspi
+_sinit.o microblaze_0/lib/xspi_stats.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/xtmrctr_intr.o 
+microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/xtmrctr_si
+nit.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_i
+ntr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/
+xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+13:06:03 **** Build of configuration Debug for project waterandlava1 ****
+make all 
+'Building file: ../src/lw_usb/HID.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/HID.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/HID.d" -MT"src/lw_usb/HID.o" -o "src/lw_usb/HID.o" "../src/lw_usb/HID.c"
+../src/lw_usb/HID.c:9:1: warning: braces around scalar initializer
+    9 | HID_DEVICE hid_device = { { 0 } };
+      | ^~~~~~~~~~
+../src/lw_usb/HID.c:9:1: note: (near initialization for 'hid_device.addr')
+'Finished building: ../src/lw_usb/HID.c'
+' '
+'Building file: ../src/lw_usb/MAX3421E.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/MAX3421E.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/MAX3421E.d" -MT"src/lw_usb/MAX3421E.o" -o "src/lw_usb/MAX3421E.o" "../src/lw_usb/MAX3421E.c"
+In file included from D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xspi.h:303,
+                 from ../src/lw_usb/MAX3421E.c:14:
+../src/lw_usb/MAX3421E.c: In function 'SPI_init':
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xstatus.h:44:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   44 | #define XST_DEVICE_NOT_FOUND            2L
+      |                                         ^~
+../src/lw_usb/MAX3421E.c:44:24: note: in expansion of macro 'XST_DEVICE_NOT_FOUND'
+   44 |                 return XST_DEVICE_NOT_FOUND;
+      |                        ^~~~~~~~~~~~~~~~~~~~
+../src/lw_usb/MAX3421E.c:38:6: note: declared here
+   38 | void SPI_init() {
+      |      ^~~~~~~~
+In file included from D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xspi.h:303,
+                 from ../src/lw_usb/MAX3421E.c:14:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/lw_usb/MAX3421E.c:50:24: note: in expansion of macro 'XST_FAILURE'
+   50 |                 return XST_FAILURE;
+      |                        ^~~~~~~~~~~
+../src/lw_usb/MAX3421E.c:38:6: note: declared here
+   38 | void SPI_init() {
+      |      ^~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXreg_wr':
+../src/lw_usb/MAX3421E.c:77:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+   77 |         u8 ReadBuffer[2];
+      |            ^~~~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXbytes_wr':
+../src/lw_usb/MAX3421E.c:100:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+  100 |         u8 ReadBuffer[nbytes+1];
+      |            ^~~~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAX3421E_Task':
+../src/lw_usb/MAX3421E.c:301:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  301 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
+      |                                              ^
+../src/lw_usb/MAX3421E.c: In function 'MaxGpxHandler':
+../src/lw_usb/MAX3421E.c:337:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
+  337 |         BYTE GPINIRQ;
+      |              ^~~~~~~
+'Finished building: ../src/lw_usb/MAX3421E.c'
+' '
+'Building file: ../src/lw_usb/transfer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/transfer.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/transfer.d" -MT"src/lw_usb/transfer.o" -o "src/lw_usb/transfer.o" "../src/lw_usb/transfer.c"
+../src/lw_usb/transfer.c:13:1: warning: braces around scalar initializer
+   13 | EP_RECORD dev0ep = {{ 0 }};         //Endpoint data structure for uninitialized device during enumeration
+      | ^~~~~~~~~
+../src/lw_usb/transfer.c:13:1: note: (near initialization for 'dev0ep.epAddr')
+../src/lw_usb/transfer.c: In function 'XferInTransfer':
+../src/lw_usb/transfer.c:199:7: warning: unused variable 'tmpbyte' [-Wunused-variable]
+  199 |  BYTE tmpbyte;
+      |       ^~~~~~~
+../src/lw_usb/transfer.c:198:7: warning: unused variable 'i' [-Wunused-variable]
+  198 |  BYTE i;
+      |       ^
+'Finished building: ../src/lw_usb/transfer.c'
+' '
+'Building file: ../src/hdmi_bg_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_bg_controller.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_bg_controller.d" -MT"src/hdmi_bg_controller.o" -o "src/hdmi_bg_controller.o" "../src/hdmi_bg_controller.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/hdmi_bg_controller.c:1:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:627:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c:408:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  408 | make_star(int scene, int x, int y){
+      | ^~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level2':
+../src/hdmi_bg_controller.c:525:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  525 | void generate_level2(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level3':
+../src/hdmi_bg_controller.c:588:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  588 | void generate_level3(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'make_star':
+../src/hdmi_bg_controller.c:410:1: warning: control reaches end of non-void function [-Wreturn-type]
+  410 | }
+      | ^
+'Finished building: ../src/hdmi_bg_controller.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/main.c:50:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:627:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:168:41: warning: initialization of 'volatile uint32_t *' {aka 'volatile long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  168 |         volatile uint32_t* sound_play = 0x40010000;
+      |                                         ^~~~~~~~~~
+In file included from ../src/main.c:50:
+At top level:
+../src/hdmi_bg_controller.h:46:40: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                        ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: waterandlava1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "waterandlava1.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_bg_controller.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: waterandlava1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size waterandlava1.elf  |tee "waterandlava1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38444	    500	   3904	  42848	   a760	waterandlava1.elf
+'Finished building: waterandlava1.elf.size'
+' '
+13:06:05 **** Build of configuration Debug for project waterandlava1_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+13:06:16 **** Clean-only build of project mb_waterandlava_toplevel ****
+buildplatform.bat 55501 mb_waterandlava_toplevel clean 
+XSDB Server Channel: tcfchan#3
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_8/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s clean 
+
+make -C microblaze_0/libsrc/gpio_v4_9/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s clean 
+
+make -C microblaze_0/libsrc/spi_v4_9/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s clean 
+
+make -C microblaze_0/libsrc/tmrctr_v4_9/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+13:06:19 **** Clean-only build of configuration Debug for project waterandlava1 ****
+make clean 
+rm -rf  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_bg_controller.o ./src/main.o ./src/platform.o  ./src/lw_usb/HID.d ./src/lw_usb/MAX3421E.d ./src/lw_usb/transfer.d  ./src/hdmi_bg_controller.d ./src/main.d ./src/platform.d  waterandlava1.elf.size  waterandlava1.elf
+' '
+13:06:19 **** Clean-only build of configuration Debug for project waterandlava1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+13:06:20 **** Build of project mb_waterandlava_toplevel ****
+buildplatform.bat 55501 mb_waterandlava_toplevel  
+XSDB Server Channel: tcfchan#4
+Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+make --no-print-directory seq_libs
+
+'Finished building libraries sequentially.'
+
+make -j 10 --no-print-directory par_libs
+
+"Running Make include in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/gpio_v4_9/src"
+
+make -C microblaze_0/libsrc/gpio_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_CO
+MPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/spi_v4_9/src"
+
+make -C microblaze_0/libsrc/spi_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COM
+PILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EX
+TRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+make -C microblaze_0/libsrc/tmrctr_v4_9/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_
+COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make include in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTR
+A_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/bram_v4_8/src"
+
+make -C microblaze_0/libsrc/bram_v4_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/cpu_v2_16/src"
+
+make -C microblaze_0/libsrc/cpu_v2_16/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/gpio_v4_9/src"
+
+make -C microblaze_0/libsrc/gpio_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPI
+LER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/intc_v3_15/src"
+
+make -C microblaze_0/libsrc/intc_v3_15/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMP
+ILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/spi_v4_9/src"
+
+make -C microblaze_0/libsrc/spi_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COMPIL
+ER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/standalone_v8_0/src"
+
+make -C microblaze_0/libsrc/standalone_v8_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA
+_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/tmrctr_v4_9/src"
+
+make -C microblaze_0/libsrc/tmrctr_v4_9/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_COM
+PILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_7/src"
+
+make -C microblaze_0/libsrc/uartlite_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-reorder -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare" "EXTRA_C
+OMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+microblaze_sleep.c:81:9: note: '#pragma message: For the sleep routines, assembly instructions are used'
+   81 | #pragma message ("For the sleep routines, assembly instructions are used")
+      |         ^~~~~~~
+"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+'Finished building libraries parallelly.'
+
+make --no-print-directory archive
+
+mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xgpio.o microblaze_0/lib/xgpio_extra.o microblaze_0/li
+b/xgpio_g.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xil
+_assert.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_me
+m.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/x
+il_testcache.o microblaze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xintc.
+o microblaze_0/lib/xintc_g.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xintc_l.o microblaze_0/lib/xintc_options.o microbla
+ze_0/lib/xintc_selftest.o microblaze_0/lib/xinterrupt_wrap.o microblaze_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaz
+e_0/lib/xspi.o microblaze_0/lib/xspi_g.o microblaze_0/lib/xspi_options.o microblaze_0/lib/xspi_selftest.o microblaze_0/lib/xspi
+_sinit.o microblaze_0/lib/xspi_stats.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/xtmrctr_g.o microblaze_0/lib/xtmrctr_intr.o 
+microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/xtmrctr_si
+nit.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartlite_g.o microblaze_0/lib/xuartlite_i
+ntr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/lib/
+xuartlite_stats.o
+
+mb-ar: creating microblaze_0/lib/libxil.a
+'Finished building libraries'
+
+13:06:25 **** Build of configuration Debug for project waterandlava1 ****
+make all 
+'Building file: ../src/lw_usb/HID.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/HID.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/HID.d" -MT"src/lw_usb/HID.o" -o "src/lw_usb/HID.o" "../src/lw_usb/HID.c"
+../src/lw_usb/HID.c:9:1: warning: braces around scalar initializer
+    9 | HID_DEVICE hid_device = { { 0 } };
+      | ^~~~~~~~~~
+../src/lw_usb/HID.c:9:1: note: (near initialization for 'hid_device.addr')
+'Finished building: ../src/lw_usb/HID.c'
+' '
+'Building file: ../src/lw_usb/MAX3421E.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/MAX3421E.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/MAX3421E.d" -MT"src/lw_usb/MAX3421E.o" -o "src/lw_usb/MAX3421E.o" "../src/lw_usb/MAX3421E.c"
+In file included from D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xspi.h:303,
+                 from ../src/lw_usb/MAX3421E.c:14:
+../src/lw_usb/MAX3421E.c: In function 'SPI_init':
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xstatus.h:44:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   44 | #define XST_DEVICE_NOT_FOUND            2L
+      |                                         ^~
+../src/lw_usb/MAX3421E.c:44:24: note: in expansion of macro 'XST_DEVICE_NOT_FOUND'
+   44 |                 return XST_DEVICE_NOT_FOUND;
+      |                        ^~~~~~~~~~~~~~~~~~~~
+../src/lw_usb/MAX3421E.c:38:6: note: declared here
+   38 | void SPI_init() {
+      |      ^~~~~~~~
+In file included from D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xspi.h:303,
+                 from ../src/lw_usb/MAX3421E.c:14:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xstatus.h:43:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   43 | #define XST_FAILURE                     1L
+      |                                         ^~
+../src/lw_usb/MAX3421E.c:50:24: note: in expansion of macro 'XST_FAILURE'
+   50 |                 return XST_FAILURE;
+      |                        ^~~~~~~~~~~
+../src/lw_usb/MAX3421E.c:38:6: note: declared here
+   38 | void SPI_init() {
+      |      ^~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXreg_wr':
+../src/lw_usb/MAX3421E.c:77:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+   77 |         u8 ReadBuffer[2];
+      |            ^~~~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXbytes_wr':
+../src/lw_usb/MAX3421E.c:100:12: warning: unused variable 'ReadBuffer' [-Wunused-variable]
+  100 |         u8 ReadBuffer[nbytes+1];
+      |            ^~~~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAX3421E_Task':
+../src/lw_usb/MAX3421E.c:301:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  301 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
+      |                                              ^
+../src/lw_usb/MAX3421E.c: In function 'MaxGpxHandler':
+../src/lw_usb/MAX3421E.c:337:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
+  337 |         BYTE GPINIRQ;
+      |              ^~~~~~~
+'Finished building: ../src/lw_usb/MAX3421E.c'
+' '
+'Building file: ../src/lw_usb/transfer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/transfer.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/transfer.d" -MT"src/lw_usb/transfer.o" -o "src/lw_usb/transfer.o" "../src/lw_usb/transfer.c"
+../src/lw_usb/transfer.c:13:1: warning: braces around scalar initializer
+   13 | EP_RECORD dev0ep = {{ 0 }};         //Endpoint data structure for uninitialized device during enumeration
+      | ^~~~~~~~~
+../src/lw_usb/transfer.c:13:1: note: (near initialization for 'dev0ep.epAddr')
+../src/lw_usb/transfer.c: In function 'XferInTransfer':
+../src/lw_usb/transfer.c:199:7: warning: unused variable 'tmpbyte' [-Wunused-variable]
+  199 |  BYTE tmpbyte;
+      |       ^~~~~~~
+../src/lw_usb/transfer.c:198:7: warning: unused variable 'i' [-Wunused-variable]
+  198 |  BYTE i;
+      |       ^
+'Finished building: ../src/lw_usb/transfer.c'
+' '
+'Building file: ../src/hdmi_bg_controller.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_bg_controller.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_bg_controller.d" -MT"src/hdmi_bg_controller.o" -o "src/hdmi_bg_controller.o" "../src/hdmi_bg_controller.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/hdmi_bg_controller.c:1:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:627:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c:408:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  408 | make_star(int scene, int x, int y){
+      | ^~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level2':
+../src/hdmi_bg_controller.c:525:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  525 | void generate_level2(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'generate_level3':
+../src/hdmi_bg_controller.c:588:6: warning: type of 'scene' defaults to 'int' [-Wimplicit-int]
+  588 | void generate_level3(scene){
+      |      ^~~~~~~~~~~~~~~
+../src/hdmi_bg_controller.c: In function 'make_star':
+../src/hdmi_bg_controller.c:410:1: warning: control reaches end of non-void function [-Wreturn-type]
+  410 | }
+      | ^
+'Finished building: ../src/hdmi_bg_controller.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/hdmi_bg_controller.h:3,
+                 from ../src/main.c:50:
+D:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include/xparameters.h:627:52: warning: initialization of 'volatile struct BG_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  627 | #define XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR 0x44A10000
+      |                                                    ^~~~~~~~~~
+../src/hdmi_bg_controller.h:46:52: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR'
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:168:41: warning: initialization of 'volatile uint32_t *' {aka 'volatile long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  168 |         volatile uint32_t* sound_play = 0x40010000;
+      |                                         ^~~~~~~~~~
+In file included from ../src/main.c:50:
+At top level:
+../src/hdmi_bg_controller.h:46:40: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   46 | static volatile struct BG_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_WAL_AXI_BASEADDR;
+      |                                        ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: waterandlava1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/ECE385/waterandlava/workspace1/mb_waterandlava_toplevel/export/mb_waterandlava_toplevel/sw/mb_waterandlava_toplevel/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "waterandlava1.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/hdmi_bg_controller.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: waterandlava1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size waterandlava1.elf  |tee "waterandlava1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38444	    500	   3904	  42848	   a760	waterandlava1.elf
+'Finished building: waterandlava1.elf.size'
+' '
+13:06:28 **** Build of configuration Debug for project waterandlava1_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

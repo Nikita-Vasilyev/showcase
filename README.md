@@ -20,3 +20,13 @@ This project is a rendition of the flash game Fireboy and Watergirl based on the
 Xilinx Spartan-7 XC7S50-CSGA324 FPGA. This demo contains 3 levels with collectible stars, 
 pressure plate puzzles, water, and lava interactions.
 
+## occupancyDetector
+An Internet of Things (IoT) device to determine whether an observed area is occupied. Utilizes Python and Wireshark to 
+preform a timed packet collection targeting MAC address and Rx power. Then, post-processes and analyzes the data using an 
+optimized K-Means algorithm to establish room occupancy. Developed for a Raspberry Pi 3.
+
+## 391OS
+A simplistic Unix-based operating system written in C and x86 Assembly created over the course of 8 weeks.
+Coordinated a group of 3 classmates to partition tasks and complete the project ahead of the semester deadline.
+Implemented features such as General Descriptor Table (GDT), Interrupt Descriptor Table (IDT), Paging (Virtual Memory), 
+Program Execution, Concurrent Processes, Task Scheduling, Drivers (keyboard, RTC, PIT, terminal).

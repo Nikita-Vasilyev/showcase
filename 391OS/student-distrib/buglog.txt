@@ -1,0 +1,58 @@
+1.	When working on the pic functions, we originally thought that enable_irq() masks an interrupt, while disable_irq() unmasks an interrupt. The functionality of our code was
+correct, but conceptually we had them mixed up, so we mitigated this bug by switching the code in enable_irq() with disable_irq(), and vice versa.
+
+2.	When we pressed keys on our keyboard, the console would only output the first key we typed, and then no other interrupts after the first key would be serviced. This was
+because after we would handle a keyboard interrupt, we forgot to call send_eoi() to send an End of Interrupt signal back to the PIC, which would allow another interrupt
+to be serviced.
+
+3.	When using function outb() and inb() for initializing the PIC to service RTC interrupts, we reference the OSDev doc which used outportb() and inportb(). However, we failed
+to take into account that outportb() and inportb() take in parameters chronologically as (port, value), while outb() and inb() take in parameters chronologically as (value, port) instead. 
+We mitigated this issue by going through our code and swapping each pair or parameters.
+
+4.	When working on the IDT/GDT, we had problems with circular linkage of header files. This bug was fixed by meticulously going through each files' #includes, making sure
+no loops were present between files.
+
+5.	We had several bugs with paging, but we were not able to finish paging for this checkpoint. --update we finished paging the error was that we were using the MACRO but
+pushin the wrong vector value to the stack.
+
+6. RTC frequency bug. We had a bug when increasing the frequency becaiuse we misunderstood the formula from OSDev. To fix this we had to use the given formula for rate and Hz and 
+use that to determine the frequency shift by 1.
+
+7. Directory read bug. We had a bug when printing out the very long text file that we got a smiley face. This was a simple fix, as we  had to truncate it to only read 32 charcters
+from the file name, to ensure that we didn't want any null characters.
+
+8. Mod's start address bug. We had issues getting access the the address of the file system in kernal. We saved the address into a local variable and called our init function, but
+we were out the scope which means it wouldn't save correctly. To fix it, we simiply moved our init function above to where we check the flags.
+
+9. In our read_data function, we had some accessing issues because we were reading the correct blocks, but getting some weird outputs when printing the data. The issue was that we
+were using the maximum number of i_nodes (64) when we should have been using the field in the struct that told us the exact number of i_nodes instead of assuming the maximum
+
+10. When writing terminal drivers, if a line was filled it would start typing on the next line. But when backspacing on the second line, it jumps back to the first and deletes the character there. 
+We needed to add a flag to indicate when we are writing on the second line of a single input. Then use that flag to delete all the characters on the second like before jumping back to first.
+
+11. We noticed an issue in our read file directory function as this caused page faults when we tried to run the ls command. The error was 
+that we didn't properly use read dentry by index to ready each file name. This was fine for checkpoint 2, but created a big error for this current
+checkpoint 3. To fix this, we used the correct buffer to read the appropriate filenames.
+
+12. initializing system calls bug. When we initialized all our system calls, we werent' properly able to use RTC open. The value read was
+different from what was intended. Turns out this was a very small error within the declaration of the function in our H file, which caused
+difference in type of parameter that was being passed through the function.
+
+13. Finding the correct PCB. The problem with this was that we were unable to find the next available location for the PCB because our formula
+to find the location was slightly incorrect. The discrepancy was that we werent't offsetting our pcb_index correctly, which led us to the
+wrong location. We found that the correct formula was: current_pcb = (pcb_t*)(EIGHT_MB - ((pcb_index+1) * EIGHT_KB))
+
+14. Fish printing incorrectly. The problem was that the way we setup file_open and file_close, it only allowed us to have one open file at a time while fish 
+required frame1.txt and frame0.txt to be open at the same time. So we had to add the functionality.
+
+15. verylargetextwithverylongname.tx not properly being read. The problem was due to the arg not being properly error checked. The length arg in strnlen was
+not verifying if length of the filename was longer than the arg.
+
+16. backspace not behaving correctly when the backspace is backlogged. The fix was checking for key_index being zero within the the if statement as opposed to 
+inside the inital statement. This was a problem because it would print the backspace keycode instead of skipping the process.
+
+17. system crashes when first booting kernel. This was becasue it was enabling PIT interrupts before initalizing scheduling. The fix to this was just calling init_pit inside the init system call
+function just before starting the first shell.
+
+18. commands not running on shown terminal. The problem was that we did not create a new_line flag for each terminal. This resulted in commands only running when TA == TS.
+To fix this we indexed new_line based on the active terminal.

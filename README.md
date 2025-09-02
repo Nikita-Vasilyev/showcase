@@ -30,3 +30,6 @@ A simplistic Unix-based operating system written in C and x86 Assembly created o
 Coordinated a group of 3 classmates to partition tasks and complete the project ahead of the semester deadline.
 Implemented features such as General Descriptor Table (GDT), Interrupt Descriptor Table (IDT), Paging (Virtual Memory), 
 Program Execution, Concurrent Processes, Task Scheduling, Drivers (keyboard, RTC, PIT, terminal).
+
+## AARG
+Senior design capstone project that created a set of Audio Augmented Reality Glasses. More details can be found in the AARG directory.
